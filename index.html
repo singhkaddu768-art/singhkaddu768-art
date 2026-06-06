@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empire Atlas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>EMPIRE ATLAS</h1>
+    <p>Explore the rise and fall of civilizations</p>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>Empires</h2>
+
+        <button onclick="showEmpire('maurya')">🏛 Maurya Empire</button>
+        <button onclick="showEmpire('roman')">🦅 Roman Empire</button>
+        <button onclick="showEmpire('mongol')">🏹 Mongol Empire</button>
+        <button onclick="showEmpire('achaemenid')">🦁 Achaemenid Empire</button>
+        <button onclick="showEmpire('gupta')">☀ Gupta Empire</button>
+        <button onclick="showEmpire('ottoman')">🌙 Ottoman Empire</button>
+        <button onclick="showEmpire('gokturk')">🐺 Gokturk Khaganate</button>
+    </aside>
+
+    <main>
+        <svg viewBox="0 0 1000 500" id="atlas">
+            <rect width="1000" height="500" class="ocean"/>
+
+            <path d="M70 130 L260 80 L360 120 L340 230 L180 260 L60 190 Z" class="land"/>
+            <path d="M390 90 L610 85 L760 150 L700 290 L500 260 L390 170 Z" class="land"/>
+            <path d="M720 300 L820 280 L900 360 L820 430 L710 370 Z" class="land"/>
+
+            <ellipse id="roman" cx="455" cy="155" rx="55" ry="25" fill="crimson" opacity="0"/>
+            <ellipse id="achaemenid" cx="535" cy="155" rx="55" ry="28" fill="limegreen" opacity="0"/>
+            <ellipse id="maurya" cx="565" cy="195" rx="60" ry="30" fill="gold" opacity="0"/>
+            <ellipse id="gupta" cx="575" cy="200" rx="45" ry="22" fill="orange" opacity="0"/>
+            <ellipse id="mongol" cx="660" cy="130" rx="95" ry="35" fill="deepskyblue" opacity="0"/>
+            <ellipse id="ottoman" cx="490" cy="145" rx="70" ry="30" fill="purple" opacity="0"/>
+            <ellipse id="gokturk" cx="625" cy="120" rx="80" ry="30" fill="cyan" opacity="0"/>
+        </svg>
+
+        <section class="info">
+            <h2 id="title">Welcome</h2>
+            <p id="details">Choose an empire to highlight its approximate territory.</p>
+        </section>
+    </main>
+</div>
+
+<footer>
+Empire Atlas • Created by Yashwardhan Singh
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
